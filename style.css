@@ -1,0 +1,194 @@
+/* Lobby Page Styling */
+body {
+    background: url("./background.jpg") no-repeat center center fixed; /* Center and fix the background */
+    background-size: cover; /* Ensure the background covers the entire screen */
+    font-family: 'Luckiest Guy', cursive; /* Playful font */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#lobby {
+    margin-top: 100px;
+}
+
+/* Title styling */
+#title {
+    font-family: 'Luckiest Guy', cursive; /* Cool and playful font */
+    font-size: 4rem; /* Larger font size */
+    color: #ffcc00; /* Candy Crush-like golden yellow */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+    margin-bottom: 50px;
+    letter-spacing: 2px; /* Add spacing between letters for a bold look */
+}
+#menu {
+    margin-top: 20px;
+}
+
+.menu-button {
+    font-family: 'Luckiest Guy', cursive; /* Playful font */
+    font-size: 1.5rem;
+    color: white;
+    background-color: #ff6f61; /* Candy Crush-like red-orange */
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.menu-button:hover {
+    background-color: #ffcc00; /* Change to golden yellow on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+}
+
+.menu-button:active {
+    transform: scale(1); /* Reset scale when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Reduce shadow on click */
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.close-button {
+    color: red;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: darkred;
+}
+
+#high-scores-list {
+    text-align: left;
+    padding: 0;
+    list-style: none;
+}
+
+#high-scores-list li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #ffcc00;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Mute/Unmute Radio Button Styling */
+#music-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+}
+
+#music-toggle label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#music-toggle input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}/* Mute/Unmute Radio Button Styling */
+#music-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+}
+
+#music-toggle label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#music-toggle input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}/* Mute/Unmute Radio Button Styling */
+#music-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 1rem;
+}
+
+#music-toggle label {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#music-toggle input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Sound Icon Styling */
+#sound-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+#sound-icon i {
+    font-size: 1.5rem; /* Icon size */
+    color: #ff6f61; /* Candy Crush-like red-orange */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#sound-icon:hover i {
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+    color: #ffcc00; /* Change to golden yellow on hover */
+}

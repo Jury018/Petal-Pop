@@ -1,0 +1,62 @@
+/* Import a playful font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body {
+    background: url("./background.jpg") no-repeat center center fixed; /* Center and fix the background */
+    background-size: cover; /* Ensure the background covers the entire screen */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Title styling */
+#title {
+    font-family: 'Luckiest Guy', cursive; /* Playful font for the title */
+    font-size: 3rem; /* Large font size */
+    color: #ffcc00; /* Candy Crush-like golden yellow */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+    margin: 20px 0;
+}
+
+/* Score styling */
+#score {
+    font-family: 'Luckiest Guy', cursive; /* Same playful font for the score */
+    font-size: 2rem; /* Slightly smaller than the title */
+    color: #ff6f61; /* Candy Crush-like red-orange */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+    margin: 10px 0;
+}
+
+/* Board styling */
+#board {
+    width: 90%; /* Make the board responsive */
+    max-width: 450px; /* Set a maximum width */
+    aspect-ratio: 1; /* Ensure the board remains square */
+    background-color: lightblue;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 20px auto; /* Center the board with spacing */
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add subtle shadow */
+}
+
+/* Candy styling */
+#board img {
+    width: calc(100% / 9); /* Dynamically adjust size based on board */
+    height: calc(100% / 9); /* Maintain square shape */
+    box-sizing: border-box; /* Include padding and border in size */
+    transition: transform 0.2s ease, opacity 0.2s ease; /* Smooth hover and animation */
+    cursor: pointer; /* Add pointer cursor for interactivity */
+    border-radius: 5px; /* Slightly round the edges of candies */
+}
+
+/* Hover effect for candies */
+#board img:hover {
+    transform: scale(1.1) rotate(5deg); /* Slightly enlarge and rotate the candy */
+    z-index: 1; /* Bring the hovered candy to the front */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Add a shadow on hover */
+}
